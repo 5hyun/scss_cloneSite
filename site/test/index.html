@@ -1,98 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
     <link rel="stylesheet" href="dist/css/styles.css" />
     <title>(S)CSS Masterclass</title>
 </head>
 <body>
-<div class="container">
-    <div class="left-screen">
-        <div class="left-screen__content">
-                <pre class="left-screen__content-header">
-BES
-HORROR
-SCENES
-                </pre>
-            <p class="left-screen__content-title">
-                An ever growing collection featuring some of the best scenes in horror.
-            </p>
-            <p class="left-screen__content-main">
-                “Best Horror Scenes” is a collection of scenes I feel are some of the most affecting in horror. Some may be simple black cat scares, others may be more subdued or nuanced. Many &nbsp come &nbsp from &nbsp films &nbsp that &nbsp aren't necessarily “horror” but have elements or threads of horror.
-            </p>
-        </div>
-
-        <div class="left-screen__link">
-            <div>
-                <a href="#">Newsletter</a>
-            </div>
-            <div>
-                <a href="#">Suggest a Scene</a>
-            </div>
-            <div>
-                <a href="#">YouTube</a>
-            </div>
-            <div>
-                <a href="#">Twitter</a>
-            </div>
-            <div>
-                <a href="#">Contact</a>
-            </div>
-            <div>
-                <a href="#">RSS</a>
-            </div>
-            <div>
-                <a href="#">Letterboxd</a>
-            </div>
-        </div>
-
-        <div class="left-screen__bottom">
-            Best Horror Scenes is a love letter to the Horror film genre by Brandon Durham. Most film clips contain major spoilers, and it is recommended you don’t watch the clip if you plan on seeing the film.
-        </div>
-    </div>
-    <div class="right-screen">
-        <div class="right-screen__fixedBar">
-            Currently viewing <span>everything</span> sorted by <span>random</span> .
-        </div>
-        <div class="right-screen__main">
-            <div class="right-screen__main-info">
-                <h1 class="right-screen__main-info__title">
-                    The Orphanage (2007)
-                </h1>
-                <div class="right-screen__main-info__author">
-                    Directed by J.A Bayona
-                </div>
-            </div>
-            <div class="right-screen__main-content">
-                <div class="right-screen__main-content__img">
-                    <img src="https://blog.kakaocdn.net/dn/3do7O/btqCDkCxTcI/xLLsnEXZFOn7i8UAiY6PJK/img.png" alt="오리">
-                </div>
-                <div class="right-screen__main-content__rank">
-                    <div>#17</div>
-                </div>
-                <div class="right-screen__main-content__vote">
-                    <i class="fa-solid fa-arrow-up"></i>
-                    <div>1</div>
-                    <i class="fa-solid fa-arrow-down"></i>
-                </div>
-            </div>
-            <div class="right-screen__main-content__rating">
-                <div>My rating: 9/10</div>
-            </div>
-        </div>
-        <div class="right-screen__main-bottom">
-            <div class="right-screen__main-bottom__Comments">
-                No Comments
-            </div>
-            <div class="right-screen__main-link">
-                <i class="fa-solid fa-comment"></i>
-                <span>Leaver a Comment</span>
-            </div>
-        </div>
-    </div>
+<header>
+    <nav>
+        <ul>
+            <li>Nail Studios</li>
+            <li>Shop Polish</li>
+        </ul>
+        <ul>
+            <li>Journal</li>
+        </ul>
+    </nav>
+</header>
+<div class="hero">
+    <h4>The Uptown Collection</h4>
+    <h3>
+        Meet our newest nails, designed in collaboration with our friends on the
+        Upper East Side.
+    </h3>
+    <a href="#">Read More</a>
 </div>
-<script
-        src="https://kit.fontawesome.com/792e436c2b.js"
-        crossorigin="anonymous"
-></script>
+<section class="under-hero">
+    <img src="nails.png" />
+    <div class="under-hero__content">
+        <div class="wrapper">
+            <h4>The Studio</h4>
+            <h3>
+                Book a manicure at our Soho flagship studio or our new Uptown
+                studio, 20 East 69th Street at Madison Avenue.
+            </h3>
+            <a href="#">Book a Manicure</a>
+        </div>
+    </div>
+</section>
+<section class="blog">
+    <article class="blog__post">
+        <img src="nails.png" />
+        <div class="post__content">
+            <span class="post__date">Feb 25, 2020</span>
+            <h4>New and Now: The Uptown Collection</h4>
+            <a href="#">Read Story</a>
+        </div>
+    </article>
+    <article class="blog__post">
+        <img
+                src="https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        />
+        <div class="post__content">
+            <span class="post__date">Feb 25, 2020</span>
+            <h4>New and Now: The Uptown Collection</h4>
+            <a href="#">Read Story</a>
+        </div>
+    </article>
+    <article class="blog__post">
+        <img
+                src="https://images.unsplash.com/photo-1583307266943-e0055bb40037?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1421&q=80"
+        />
+        <div class="post__content">
+            <span class="post__date">Feb 25, 2020</span>
+            <h4>New and Now: The Uptown Collection</h4>
+            <a href="#">Read Story</a>
+        </div>
+    </article>
+</section>
+<section class="gallery">
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+    <div class="gallery__poster">
+        <img src="gallery.webp" />
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__column">
+        <span class="column__title">Support</span>
+        <ul>
+            <li>F.A.Q.</li>
+            <li>Privacy Policu</li>
+            <li>Terms and Conditions</li>
+            <li>Accessibility</li>
+        </ul>
+    </div>
+    <div class="footer__column">
+        <span class="column__title">Follow Us</span>
+        <ul>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+    <div class="footer__column">
+        <span class="column__title">Support</span>
+        <ul>
+            <li>F.A.Q.</li>
+            <li>Privacy Policu</li>
+            <li>Terms and Conditions</li>
+            <li>Accessibility</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
