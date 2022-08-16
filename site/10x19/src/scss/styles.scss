@@ -1,0 +1,95 @@
+@import "_reset.scss";
+@import "_variables.scss";
+
+body {
+  background-color: $bg;
+}
+
+div {
+  color: $bg;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1.3fr;
+
+  gap: 1px;
+
+  height: 100%;
+}
+
+.left,
+.right,
+.center {
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+  }
+}
+
+.left,
+.right {
+  display: grid;
+  grid-template-rows: 65px repeat(5, 1fr) 65px;
+  gap: 1px;
+
+  & > div {
+    background-color: white;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(710px);
+  }
+
+  25% {
+    transform: translateX(355px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-355px);
+  }
+
+  100% {
+    transform: translateX(-710px);
+  }
+}
+
+.center {
+  display: grid;
+  grid-template-rows: 65px 1fr 65px;
+  gap: 1px;
+
+  & > div {
+    background-color: white;
+  }
+
+  & > div > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .explanation {
+    white-space: nowrap;
+    overflow: hidden;
+    span {
+      animation: slide 10s linear infinite forwards;
+    }
+  }
+}
+
+.point {
+  cursor: pointer;
+}
+
+.point:hover {
+  background-color: $bg;
+  color: white;
+}
