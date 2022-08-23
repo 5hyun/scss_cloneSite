@@ -1,0 +1,90 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #f6f6f6;
+  padding: 50px 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 0 50px;
+}
+
+/*title*/
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding-top: 70px;
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid;
+  font-weight: 600;
+}
+
+.title-left {
+  font-size: 80px;
+}
+
+.title-right {
+  font-size: 30px;
+}
+
+/*content*/
+.content {
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  font-size: 11px;
+}
+
+.content-left {
+  display: flex;
+}
+
+.content-left__left,
+.content-left__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-left__left {
+  margin-right: 40px;
+}
+
+/*circle*/
+.circle {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blue,
+.gray,
+.green {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.blue {
+  background-color: #bbe1f2;
+}
+
+.gray {
+  background-color: #616365;
+}
+
+.green {
+  background-color: #03a565;
+}
