@@ -1,0 +1,137 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+div:not(.content) {
+  border: 1px solid #f7722f;
+}
+
+.content {
+  position: absolute;
+
+  width: 22%;
+  text-align: center;
+  text-transform: uppercase;
+
+  top: 33vh;
+  left: 38vw;
+
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+}
+
+/*전체*/
+.main {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 0.05fr 1fr 0.05fr;
+}
+
+/*상하단*/
+.grid1,
+.grid3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  color: #f7722f;
+}
+
+/*가운데*/
+.grid2 {
+  background-color: blue;
+
+  display: grid;
+  grid-template-columns: 0.08fr 1fr 1fr 0.08fr;
+}
+
+.grid2-1 {
+  background-color: white;
+
+  display: grid;
+  grid-template-rows: 0.5fr 0.4fr 0.1fr;
+}
+
+.grid2-1__1 {
+  background-color: #f7722f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid2-1__1 > span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: white;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  margin: 5px 0;
+}
+
+.grid2-1__2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  color: #f7722f;
+}
+
+.grid2-1__3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid2-1__3 > i {
+  font-size: 24px;
+  color: #f7722f;
+}
+
+.grid2-2 {
+  background-color: pink;
+}
+
+.grid2-3 {
+  background-color: red;
+}
+
+.grid2-4 {
+  background-color: purple;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid2-4__1,
+.grid2-4__2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  background-color: #739a3d;
+}
